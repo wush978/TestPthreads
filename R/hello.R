@@ -1,5 +1,5 @@
 #'@export
 hello <- function() {
-  .Call('TestPthreads_hello', PACKAGE = 'TestPthreads')
+  .Call('hello', PACKAGE = 'TestPthreads')
 }
 
