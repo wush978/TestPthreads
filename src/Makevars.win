@@ -1,0 +1,3 @@
+SHLIB_PTHREAD_FLAGS = -pthread
+PKG_CPPFLAGS = -pthread
+PKG_LIBS = -lpthread

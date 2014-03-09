@@ -3,9 +3,8 @@
 
 using namespace Rcpp;
 
-//'@export
-//[[Rcpp::export]]
-SEXP hello() {
+RcppExport SEXP hello() {
+  BEGIN_RCPP
    pthread_t threads[NUM_THREADS];
    int rc;
    long t;
@@ -22,4 +21,5 @@ SEXP hello() {
 //   pthread_exit(NULL);
    Rprintf("pthread_exit\n");
    return R_NilValue;
+   END_RCPP
 }
